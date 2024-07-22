@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  become: false
+  roles:
+    - role: example_role
+      tags: example_tag

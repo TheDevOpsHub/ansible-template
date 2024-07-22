@@ -1,0 +1,21 @@
+# roles/example_role/tasks/main.yml
+---
+- name: Print a greeting message
+  debug:
+    msg: "Greeting: {{ greeting_message }}"
+  tags: example_tag
+
+- name: Print a user-specific message
+  debug:
+    msg: "Hello, {{ user_name }}! Your role is {{ user_role }}."
+  tags: example_tag
+
+- name: Print a server information message
+  debug:
+    msg: "Server {{ server_name }} has IP {{ server_ip }}."
+  tags: example_tag
+
+- name: Print a farewell message
+  debug:
+    msg: "Farewell: {{ farewell_message }}"
+  tags: example_tag

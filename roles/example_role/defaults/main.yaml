@@ -1,0 +1,4 @@
+# roles/example_role/defaults/main.yml
+---
+greeting_message: "Welcome to the Ansible playbook!"
+farewell_message: "Thank you for using Ansible!"

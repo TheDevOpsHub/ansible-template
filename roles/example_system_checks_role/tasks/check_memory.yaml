@@ -1,0 +1,8 @@
+---
+- name: Check memory usage
+  command: free -m
+  register: memory_info
+
+- name: Print memory usage
+  debug:
+    msg: "{{ memory_info.stdout }}"

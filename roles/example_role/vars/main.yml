@@ -1,0 +1,7 @@
+# roles/example_role/vars/main.yml
+---
+user_name: "John Doe"
+user_role: "Developer"
+server_name: "localhost"
+server_ip: "127.0.0.1"
+  
