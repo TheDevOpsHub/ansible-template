@@ -45,3 +45,9 @@ Ansible Lint is used to ensure best practices in your Ansible playbooks. The lin
 ## Containerization
 
 A Dockerfile is included to containerize Ansible, ensuring consistency across environments.
+
+## Run a specific playbook
+
+```bash
+ansible-playbook playbooks/example_playbook.yml --tags example_tag
+```
