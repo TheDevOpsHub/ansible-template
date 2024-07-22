@@ -6,6 +6,13 @@ RUN apt-get update && apt-get install -y \
     && pip install --no-cache-dir ansible ansible-lint
 
 WORKDIR /ansible
+
+# Copy the requirements file
+COPY requirements.yml /tmp/requirements.yml
+
+# Install Ansible roles and collections
+RUN ansible-galaxy install -r /tmp/requirements.yml
+
 COPY . .
 
 ENTRYPOINT ["ansible-playbook"]

@@ -10,6 +10,7 @@ This repository serves as a template for Ansible projects, including features fo
 - **roles/**: Ansible roles
 - **inventories/**: Inventory files
 - **Dockerfile**: Dockerfile for containerizing Ansible
+- **playbooks/**: Ansible playbooks
 - **tests/**: Test playbooks
 - **ansible.cfg**: Ansible configuration
 - **requirements.yml**: Ansible Galaxy requirements
@@ -31,7 +32,7 @@ This repository serves as a template for Ansible projects, including features fo
 
 3. **Run Ansible Playbook**:
    ```sh
-   docker run --rm ansible-playbook tests/test_playbook.yml
+   docker run --rm ansible-playbook playbooks/example_playbook.yaml
    ```
 
 ## Continuous Integration
