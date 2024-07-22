@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  become: false
+  roles:
+    - role: example_system_checks_role
+      tags: system_checks_tag

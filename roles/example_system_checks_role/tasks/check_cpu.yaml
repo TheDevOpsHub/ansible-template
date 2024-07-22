@@ -1,0 +1,8 @@
+---
+- name: Check CPU info
+  command: lscpu
+  register: cpu_info
+
+- name: Print CPU info
+  debug:
+    msg: "{{ cpu_info.stdout }}"

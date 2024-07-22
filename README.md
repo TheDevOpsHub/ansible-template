@@ -51,4 +51,6 @@ A Dockerfile is included to containerize Ansible, ensuring consistency across en
 
 ```bash
 ansible-playbook playbooks/example_playbook.yml --tags example_tag
+
+ansible-playbook playbooks/example_system_checks_role.yaml --tags system_checks_tag
 ```

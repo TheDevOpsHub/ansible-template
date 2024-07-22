@@ -1,0 +1,8 @@
+---
+- name: Check disk usage
+  command: df -h
+  register: disk_info
+
+- name: Print disk usage
+  debug:
+    msg: "{{ disk_info.stdout }}"

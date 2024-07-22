@@ -1,0 +1,7 @@
+---
+- name: Check system CPU
+  import_tasks: check_cpu.yaml
+- name: Check system Disk  
+  import_tasks: check_disk.yaml
+- name: Check system memory  
+  import_tasks: check_memory.yaml
